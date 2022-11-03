@@ -1,0 +1,75 @@
+{
+  "project_info": {
+    "project_number": "00000000000",
+    "firebase_url": "https://gcm-xxxxxxxxx-xxxxxxx.firebaseio.com",
+    "project_id": "gcm-xxxxxxxxx-xxxxxxx"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:00000000000:android:xxxxxxxxxxxxxxxx",
+        "android_client_info": {
+          "package_name": "app.mtrl.recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "00000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:00000000000:android:xxxxxxxxxxxxxxxx",
+        "android_client_info": {
+          "package_name": "com.app.materialrecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "00000000000-l6grqgerr5iidojib1h02f1e73bmh3qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-00000000-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "app.mtrl.recipe"
+        minSdk 19
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+/* IMPORTANT :
+ * Be careful when update dependencies, different version library may caused error */
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // library for user interface
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    // library for api
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.2'
+    implementation 'com.google.code.gson:gson:2.8.7'
+
+    // others library
+
+    // firebase library
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    //ad network
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.facebook.android:audience-network-sdk:6.8.0'
+    implementation files('libs/unity-ads-4.0.0.aar')
+    implementation 'com.applovin:applovin-sdk:11.0.0'
+
+    //ad network mediation
+    implementation 'com.google.ads.mediation:facebook:6.8.0.0'
+    implementation 'com.applovin.mediation:google-adapter:20.2.0.1'
+    implementation 'com.applovin.mediation:facebook-adapter:6.5.1.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+}
+
+apply plugin: "com.google.gms.google-services"
